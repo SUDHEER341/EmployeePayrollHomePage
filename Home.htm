@@ -1,69 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <title>Home</title>
-    <link rel="stylesheet" href="Home.css">
-    <script defer src="EventListeners.js"></script>
-</head>
-<body>
-    <!-- UC1 -->
-    <header class="header-content header">
-        <div class="logo-content">
-            <img src="./assets/images/logo.png" alt="" height="50px">
-            <div>
-              <span class="emp-text">EMPLOYEE</span>
-              <div>
-                <span class="emp-text emp-payroll">PAYROLL</span>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <title>Home</title>
+        <link rel="stylesheet" href="Home.css">
+        <script defer src="EventListeners.js"></script>
+    </head>
+    <body>
+        <!-- UC1 -->
+        <header class="header-content header">
+            <div class="logo-content">
+                <img src="./assets/images/logo.png" alt="" height="50px">
+                <div>
+                <span class="emp-text">EMPLOYEE</span>
+                <div>
+                    <span class="emp-text emp-payroll">PAYROLL</span>
+                </div>
+                </div>
             </div>
+        </header>
+            <!-- UC2 -->
+
+        <div class="main-content">
+            <div class="header-content">
+            <div class="emp-detail-text">
+                Employee Details <div class="emp-count">10</div>
             </div>
-        </div>
-      </header>
-        <!-- UC2 -->
+            <a href="new_payroll_form.htm" class="add-button">
+            <img src="./assets/icons/add-24px.svg" alt="" class="search">Add User</a>
+        </div>     
+    </div>
+    <script  src="Home.js"> </script>
 
-      <div class="main-content">
-        <div class="header-content">
-         <div class="emp-detail-text">
-             Employee Details <div class="emp-count">10</div>
-         </div>
-         <a href="new_payroll_form.htm" class="add-button">
-        <img src="./assets/icons/add-24px.svg" alt="" class="search">Add User</a>
-     </div>     
-  </div>
-            <!-- UC3 -->
-  <table id="display" class="table">
-       <tr>
-        <th></th>
-        <th>Name</th>
-        <th>Gender</th>
-        <th>Department</th>
-        <th>salary</th>
-        <th>Start Date</th>
-        <th>Actions</th>
-       </tr>
+                <!-- UC3 -->
+    <table id="table-display" class="table">  </table>
 
-       <tr>
-        <td> <img src="./assets/profile-images/Ellipse -2.png" alt="" class="profile"></td>
-        <td>G Sudheer Kumar</td>
-        <td>Male</td>
-        <td>
-        <div class="dept-label">HR</div>
-        <div class="dept-label">Finance</div>
-        </td>
-        <td>400000</td>
-        <td>14 nov 2020</td>
-        <td>
-            <img id ="1" src="./assets/icons/delete-black-18dp.svg" alt="delete" onclick="remove(this)">
-            <img id="1"  src="./assets/icons/create-black-18dp.svg" alt="edit" onclick="update(this)">
-        </td>
-       </tr>
-   <div>
-    
-   </div>
-    </table>
-</body>
-</html>
+    </body>
+    </html>
