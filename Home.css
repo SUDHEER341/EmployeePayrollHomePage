@@ -2,7 +2,10 @@
 
     body{
         margin: 0;
-        height: 100%;
+        height: auto;
+        width: auto;
+        
+        
     }
     .header{
         padding: 15px 0;
